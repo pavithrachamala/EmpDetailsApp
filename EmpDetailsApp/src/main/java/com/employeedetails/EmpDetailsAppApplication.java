@@ -16,7 +16,6 @@ public class EmpDetailsAppApplication implements CommandLineRunner{
 	private EmployerRepository employerRepository;
 	@Autowired
 	private EmployeeService employeeService;
-
 	public static void main(String[] args) {
 		SpringApplication.run(EmpDetailsAppApplication.class, args);
 	}
