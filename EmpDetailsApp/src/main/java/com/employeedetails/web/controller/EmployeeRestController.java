@@ -15,7 +15,6 @@ import com.employeedetails.model.service.EmployeeService;
 public class EmployeeRestController {
 	@Autowired
 	private EmployeeService employeeService;
-	
 	@GetMapping(path="/employees",produces=MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<List<Employee>> getAllEmployees()
 	{
