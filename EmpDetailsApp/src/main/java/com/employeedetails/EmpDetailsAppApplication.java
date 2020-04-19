@@ -1,16 +1,13 @@
 package com.employeedetails;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 import com.employeedetails.model.entities.Employee;
 import com.employeedetails.model.entities.Employer;
 import com.employeedetails.model.repository.EmployeeRepository;
 import com.employeedetails.model.repository.EmployerRepository;
 import com.employeedetails.model.service.EmployeeService;
-
 @SpringBootApplication
 public class EmpDetailsAppApplication implements CommandLineRunner{
 	@Autowired
