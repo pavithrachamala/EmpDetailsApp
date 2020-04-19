@@ -1,5 +1,4 @@
 package com.employeedetails.model.entities;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -7,7 +6,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 @Entity
 @Table(name="employee_new_2020")
@@ -19,14 +17,10 @@ public class Employee {
 	private String dept;
 	private double salary;
 	private String address;
-	
 	@ManyToOne
 	@JoinColumn(name="employer_fk")
 	@JsonIgnore
 	private Employer employer;
-	
-
-	
 	public long getEmpId() {
 		return empId;
 	}
@@ -63,7 +57,6 @@ public class Employee {
 	public void setEmployer(Employer employer) {
 		this.employer = employer;
 	}
-	
 	public Employee(String name, String dept, double salary,
 			String address) {
 		this.name = name;
@@ -72,6 +65,5 @@ public class Employee {
 		this.address = address;
 	}
 	public Employee() {
-		 
 	}
 }
