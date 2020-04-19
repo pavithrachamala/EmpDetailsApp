@@ -1,5 +1,4 @@
 package com.employeedetails.model.entities;
-
 import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.CascadeType;
@@ -10,7 +9,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-
 @Entity
 @Table(name = "employer_new_2020")
 public class Employer {
@@ -19,12 +17,7 @@ public class Employer {
 	private long id;
 	private String name;
 	@OneToMany(mappedBy = "employer", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	private List<Employee> employees = new ArrayList<>();
-
-//	public void addEmployee(Employee employee) {
-//		employees.add(employee);
-//		employee.setEmployer(this);
-//	}
+	private List<Employee> employees = new ArrayList<>()
 
 	public long getId() {
 		return id;
